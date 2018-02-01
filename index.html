@@ -1,84 +1,67 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kverna</title>
-    <link rel="stylesheet" href="css/style.css" media="Screen">
-    <link rel="stylesheet" href="css/handheld.css" media="touch">
-
-    <script src="js/cycle.js" ></script>
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cycle.js"></script>
+    <title>New</title>
 </head>
 <body onload="cycle()">
-<header>
-    <h1>Kverna - EVE Online</h1>
-    <img class="slide" src="https://i.imgur.com/E0SYa9C.png" alt="Header image">
-    <img class="slide" src="https://i.imgur.com/POSxBpW.png" alt="Header image">
-    <img class="slide" src="https://i.imgur.com/21JLx2T.png" alt="Header image">
-    <img class="slide" src="https://i.imgur.com/3BHac5v.png" alt="Header image">
-    <img class="slide" src="https://i.imgur.com/AYjMHur.png" alt="Header image">
-    <nav>
-        <ul>
-            <li><a href="index.html" class="activeTab">Hjem</a></li>
-            <li><a href="turist.html">Turist Guide</a></li>
-            <li><a href="makkaroni.html">Makkaronifabrikken</a></li>
-        </ul>
-    </nav>
-</header>
-<div class="content">
-    <section>
-        <h2 class="mainTitle">Velkommen til min hjemmeside!</h2>
-        <article>
-            <h3>Hvem er jeg?</h3>
-            <div class="picture">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Th._Kittelsen_Askeladdens_eventyr.jpg/1024px-Th._Kittelsen_Askeladdens_eventyr.jpg" alt="Espen Askeladd">
-                <p><span class="text">Han ville aldrig gjøre noget, bare ligge og grave i Asken</span> | <span class="credit">Foto av: Th. Kittelsen</span></p>
-            </div>
-            <p class="ingress">Mitt navn er Espen Kvernstad. Jeg studerer dataingeniør ved NTNU Ålesund.</p>
-            <p class="byline">av <span class="author">Espen Kvernstad</span>, 16. jan. 2018</p>
-            <p>Denne nettsiden er laget som en obligatorisk oppgave i faget Webteknologi. Dette er en introduksjon til HTML og CSS.</p>
-            <p>Jeg har tidligere laget nettsider. Først var det enkel HTML og CSS, men jeg har også brukt PHP med en MySQL database i bakgrunnen. Det største prosjektet var en nettside for Kristiansund videregående skole der elever kunne registrere kontaktinformasjon og utvalgte lærere hadde tilgang til å lese og redigere elevenes innsendinger.</p>
-        </article>
-
-        <article>
-            <h3>Tre ting du ikke viste om byen!</h3>
-            <div class="picture">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Storkaia_Kristiansund.JPG/1024px-Storkaia_Kristiansund.JPG" alt="Storkaia, Kristiansund">
-                <p><span class="text">Storkaia, en del av havneområdet i Kristiansund.</span> | <span class="credit">Foto av: Harald Oppedal</span></p>
-            </div>
-            <p class="ingress"><a href="https://no.wikipedia.org/wiki/Kristiansund">Byen</a> er full av overraskelser. Her skal jeg vise deg noen av byens høydepunkter!</p>
-            <p class="byline">av <span class="author">Espen Kvernstad</span>, 16. jan. 2018</p>
-            <p>Det er mange ting å gjøre på i byen, alt fra bowling til kino og spennende spisesteder, og her skal jeg liste noen av de!</p>
-            <ol>
-                <li>Hvert år blir det arrangert <i>The Convention</i> i Braathallen. Dette er en 5-dagers samling for dataentusiaster. Alle kan ta med sin egen datamaskin og det er flere konkuranser, både i spill og annet.</li>
-                <li>I utkanten av byen, på Frei, ligger Rensvik Pizza og Grill. De leverer byens beste kebab og har ellers et stort og variert utvalg.</li>
-                <li>Sist men ikke minst, Kristiansund er kjent for sin lange klippfisktradisjon.</li>
-            </ol>
-        </article>
-
-        <article>
-            <h3>Min hobby; EVE Online</h3>
-            <div class="picture">
-                <img src="https://i.imgur.com/WWkXkmg.jpg" alt="This is not the greatest leader in the world, this is just a tribute">
-                <p><span class="text">This is not the greatest leader in the world, this is just a tribute</span> | <span class="credit">Foto av: Cymek</span></p>
-            </div>
-            <p class="ingress">EVE gir massive i <span class="tooltip" title="Massive Multiplayer Online">MMO</span> en ny mening!</p>
-            <p class="byline">av <span class="author">Espen Kvernstad</span>, 15. jan. 2018</p>
-            <p>New Eden, det virtuelle universet spillet tar plass, er hjemmet til mange små og store organisasjoner laget og styrt av spillere. Noen av disse er små såkalte selskaper med noen få medlemmer, allianser er sammensatt av flere selskaper og de største organisasjonene er sammensatt av flere allianser.</p>
-            <p>For å organiser medlemmene driver organisasjonene sine egne IT systemer, vanligvis bestående av forum, VoIP, IRC/Jabber, diverse informasjonsverktøy og en oversikt over hvilke grupper hver enkelt har tilgang til.</p>
-        </article>
-    </section>
-    <aside>
-        <h2>Fakta om meg!</h2>
-        <ul>
-            <li>Navn: Espen Kvernstad</li>
-            <li>Årsmodell: '95</li>
-            <li>Bosted: Ålesund</li>
-        </ul>
-    </aside>
-</div>
-<footer>
-    Denne siden er laget av <b>Espen Kvernstad</b> | <b>© 2018</b>
-    <br>Sist endret 2018-02-01
-</footer>
+    <div class="grid">
+        <header>
+            <img class="slide" src="https://i.imgur.com/E0SYa9C.png" alt="Header image">
+            <img class="slide" src="https://i.imgur.com/POSxBpW.png" alt="Header image">
+            <img class="slide" src="https://i.imgur.com/21JLx2T.png" alt="Header image">
+            <img class="slide" src="https://i.imgur.com/3BHac5v.png" alt="Header image">
+            <img class="slide" src="https://i.imgur.com/AYjMHur.png" alt="Header image">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="oldIndex.html" class="activeTab">Hjem</a></li>
+                <li><a href="turist.html">Turist Guide</a></li>
+                <li><a href="makkaroni.html">Makkaronifabrikken</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h3>Hvem er jeg?</h3>
+                <div class="picture">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Th._Kittelsen_Askeladdens_eventyr.jpg/1024px-Th._Kittelsen_Askeladdens_eventyr.jpg" alt="Espen Askeladd">
+                    <p><span class="text">Han ville aldrig gjøre noget, bare ligge og grave i Asken</span> | <span class="credit">Foto av: Th. Kittelsen</span></p>
+                </div>
+                <p class="ingress">Mitt navn er Espen Kvernstad. Jeg studerer dataingeniør ved NTNU Ålesund.</p>
+                <p class="byline">av <span class="author">Espen Kvernstad</span>, 16. jan. 2018</p>
+                <p>Denne nettsiden er laget som en obligatorisk oppgave i faget Webteknologi. Dette er en introduksjon til HTML og CSS.</p>
+                <p>Jeg har tidligere laget nettsider. Først var det enkel HTML og CSS, men jeg har også brukt PHP med en MySQL database i bakgrunnen. Det største prosjektet var en nettside for Kristiansund videregående skole der elever kunne registrere kontaktinformasjon og utvalgte lærere hadde tilgang til å lese og redigere elevenes innsendinger.</p>
+            </article>
+            <article>
+                <h3>Hvem er jeg?</h3>
+                <div class="picture">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Th._Kittelsen_Askeladdens_eventyr.jpg/1024px-Th._Kittelsen_Askeladdens_eventyr.jpg" alt="Espen Askeladd">
+                    <p><span class="text">Han ville aldrig gjøre noget, bare ligge og grave i Asken</span> | <span class="credit">Foto av: Th. Kittelsen</span></p>
+                </div>
+                <p class="ingress">Mitt navn er Espen Kvernstad. Jeg studerer dataingeniør ved NTNU Ålesund.</p>
+                <p class="byline">av <span class="author">Espen Kvernstad</span>, 16. jan. 2018</p>
+                <p>Denne nettsiden er laget som en obligatorisk oppgave i faget Webteknologi. Dette er en introduksjon til HTML og CSS.</p>
+                <p>Jeg har tidligere laget nettsider. Først var det enkel HTML og CSS, men jeg har også brukt PHP med en MySQL database i bakgrunnen. Det største prosjektet var en nettside for Kristiansund videregående skole der elever kunne registrere kontaktinformasjon og utvalgte lærere hadde tilgang til å lese og redigere elevenes innsendinger.</p>
+            </article>
+            <article>
+                <h3>Hvem er jeg?</h3>
+                <div class="picture">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Th._Kittelsen_Askeladdens_eventyr.jpg/1024px-Th._Kittelsen_Askeladdens_eventyr.jpg" alt="Espen Askeladd">
+                    <p><span class="text">Han ville aldrig gjøre noget, bare ligge og grave i Asken</span> | <span class="credit">Foto av: Th. Kittelsen</span></p>
+                </div>
+                <p class="ingress">Mitt navn er Espen Kvernstad. Jeg studerer dataingeniør ved NTNU Ålesund.</p>
+                <p class="byline">av <span class="author">Espen Kvernstad</span>, 16. jan. 2018</p>
+                <p>Denne nettsiden er laget som en obligatorisk oppgave i faget Webteknologi. Dette er en introduksjon til HTML og CSS.</p>
+                <p>Jeg har tidligere laget nettsider. Først var det enkel HTML og CSS, men jeg har også brukt PHP med en MySQL database i bakgrunnen. Det største prosjektet var en nettside for Kristiansund videregående skole der elever kunne registrere kontaktinformasjon og utvalgte lærere hadde tilgang til å lese og redigere elevenes innsendinger.</p>
+            </article>
+        </section>
+        <aside>ASDIE</aside>
+        <footer>
+            Denne siden er laget av <b>Espen Kvernstad</b> | <b>© 2018</b>
+            <br>Sist endret 2018-02-01</footer>
+    </div>
 </body>
 </html>
