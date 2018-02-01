@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Kverna</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" media="Screen">
+    <link rel="stylesheet" href="css/handheld.css" media="handheld">
+
+    <script src="js/cycle.js" ></script>
 </head>
-<body>
+<body onload="cycle()">
 <header>
-    <h1>Espen Kvernstad</h1>
+    <h1>Kverna - EVE Online</h1>
+    <img class="slide" src="https://i.imgur.com/E0SYa9C.png" alt="Header image">
+    <img class="slide" src="https://i.imgur.com/POSxBpW.png" alt="Header image">
+    <img class="slide" src="https://i.imgur.com/21JLx2T.png" alt="Header image">
+    <img class="slide" src="https://i.imgur.com/3BHac5v.png" alt="Header image">
+    <img class="slide" src="https://i.imgur.com/AYjMHur.png" alt="Header image">
+    <nav>
+        <ul>
+            <li><a href="index.html" class="activeTab">Hjem</a></li>
+            <li><a href="turist.html">Turist Guide</a></li>
+            <li><a href="makkaroni.html">Makkaronifabrikken</a></li>
+        </ul>
+    </nav>
 </header>
-<nav>
-    <a href="index.html">Hjem</a>
-    <a href="turist.html">Turist Guide</a>
-    <a href="makkaroni.html">Makkaronifabrikken</a>
-</nav>
 <div class="content">
     <section>
         <h2 class="mainTitle">Velkommen til min hjemmeside!</h2>
@@ -67,7 +77,7 @@
     </aside>
 </div>
 <footer>
-    Denne siden er laget av <b>Espen Kvernstad</b> | Beskyttet av <b>Åndsverksloven</b>
+    Denne siden er laget av <b>Espen Kvernstad</b> | <b>© 2018</b>
     <br>Sist endret 2018-02-01
 </footer>
 </body>
