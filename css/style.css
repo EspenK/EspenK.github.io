@@ -12,7 +12,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-            "header header"
             "nav nav"
             "section section"
             "aside aside"
@@ -45,6 +44,10 @@ footer {
     grid-area: footer;
 }
 
+header .slide {
+    display: none;
+}
+
 @media screen and (min-width: 736px) {
     .grid {
         display: grid;
@@ -55,27 +58,21 @@ footer {
                 ". section aside ."
                 "footer footer footer footer";
     }
+
+    header .slide {
+        display: block;
+    }
+
+    nav ul li {
+        float: left;
+    }
 }
 
 
-
-
-
-
-
-
-
-/*
-Header
- */
 header img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-}
-
-header .slide {
-    display: none;
 }
 
 /*
@@ -83,12 +80,6 @@ Navigation bar
  */
 nav ul {
     list-style: none;
-}
-
-@media screen and (min-width: 736px) {
-    nav ul li {
-        float: left;
-    }
 }
 
 nav ul li a {
