@@ -51,7 +51,7 @@ header .slide {
 @media screen and (min-width: 736px) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 75% 25% 1fr;
+        grid-template-columns: 1fr 50% 20% 1fr;
         grid-template-areas:
                 "header header header header"
                 ". nav nav ."
