@@ -8,18 +8,85 @@ body {
     font-family: helvetica, sans-serif;
 }
 
+/*
+################
+Grid layout
+ */
+
+/*
+Mobile
+ */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-            "nav nav"
-            "section section"
-            "aside aside"
-            "footer footer";
-    grid-auto-rows: minmax(20px, auto);
-    grid-gap: 10px;
+            "nav"
+            "section"
+            "footer";
+
 }
 
+header .slide {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+/*
+Smaller screen/ tablet
+ */
+@media screen and (min-width: 736px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 50% 20% 1fr;
+        grid-template-areas:
+                "header header header header"
+                ". nav nav ."
+                ". section section ."
+                "footer footer footer footer";
+    }
+
+    header .slide {
+        display: block;
+    }
+
+    nav ul li {
+        float: left;
+    }
+}
+
+/*
+Desktop
+ */
+@media screen and (min-width: 960px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 50% 20% 1fr;
+        grid-template-areas:
+                "header header header header"
+                ". nav nav ."
+                ". section aside ."
+                "footer footer footer footer";
+    }
+
+    header .slide {
+        display: block;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    aside {
+        display: block;
+    }
+}
+
+/*
+Grid elements
+ */
 header {
     grid-area: header;
 }
@@ -44,31 +111,13 @@ footer {
     grid-area: footer;
 }
 
-header .slide {
-    display: none;
-}
+/*
+################
+ */
 
-@media screen and (min-width: 736px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 50% 20% 1fr;
-        grid-template-areas:
-                "header header header header"
-                ". nav nav ."
-                ". section aside ."
-                "footer footer footer footer";
-    }
-
-    header .slide {
-        display: block;
-    }
-
-    nav ul li {
-        float: left;
-    }
-}
-
-
+/*
+Header
+ */
 header img {
     width: 100%;
     height: 350px;
@@ -109,8 +158,24 @@ footer {
 }
 
 /*
-Article layout
+Aside
  */
+aside {
+    padding: 5px;
+}
+
+aside ul {
+    list-style: none;
+    line-height: 140%;
+}
+
+/*
+Article styling
+ */
+article {
+    padding: 5px;
+}
+
 .picture img{
     width: 100%;
     max-height: 60vh;
@@ -152,28 +217,4 @@ Misc
 .tooltip {
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
