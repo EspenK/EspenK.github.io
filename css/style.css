@@ -99,8 +99,6 @@ section {
     grid-area: section;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(50px, auto);
-    grid-gap: 10px;
 }
 
 aside {
@@ -169,6 +167,10 @@ aside ul {
     line-height: 140%;
 }
 
+aside ul li a {
+    text-decoration: none;
+}
+
 /*
 Article styling
  */
@@ -208,6 +210,10 @@ article {
     font-weight: bold;
 }
 
+.picture .credit a {
+    text-decoration: none;
+}
+
 .ingress {
     font-size: large;
     font-style: oblique;
@@ -226,6 +232,6 @@ article {
 Misc
  */
 .tooltip {
-    font-weight: bold;
+    border-bottom: 1px dotted;
 }
 
