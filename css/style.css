@@ -4,84 +4,8 @@ body, nav ul {
 }
 
 body {
-    background-color: #eeeeee;
+    background-color: #f9f9f9;
     font-family: helvetica, sans-serif;
-}
-
-/*
-################
-Grid layout
- */
-
-/*
-Mobile
- */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-            "nav"
-            "section"
-            "footer";
-
-}
-
-header img {
-    display: none;
-}
-
-aside {
-    display: none;
-}
-
-/*
-Smaller screen/ tablet
- */
-@media screen and (min-width: 736px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 50% 20% 1fr;
-        grid-template-areas:
-                "header header header header"
-                ". nav nav ."
-                ". section section ."
-                "footer footer footer footer";
-    }
-
-    header img {
-        display: block;
-    }
-
-    nav ul li {
-        float: left;
-    }
-}
-
-/*
-Desktop
- */
-@media screen and (min-width: 960px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 50% 20% 1fr;
-        grid-template-areas:
-                "header header header header"
-                ". nav nav ."
-                ". section aside ."
-                "footer footer footer footer";
-    }
-
-    header img {
-        display: block;
-    }
-
-    nav ul li {
-        float: left;
-    }
-
-    aside {
-        display: block;
-    }
 }
 
 /*
@@ -93,6 +17,7 @@ header {
 
 nav {
     grid-area: nav;
+    align-items: center;
 }
 
 section {
@@ -114,35 +39,69 @@ footer {
  */
 
 /*
+Navigation bar
+ */
+/*
+nav {
+    height: 52px;
+}
+*/
+
+nav img.logo {
+    max-height: 32px;
+    padding: 3px;
+}
+
+.dropdown-button {
+    background-color: inherit;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #eeeeee;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a:not(.logo) {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: cornflowerblue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: cornflowerblue;
+}
+
+/*
 Header
  */
 header img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-}
-
-/*
-Navigation bar
- */
-nav ul {
-    list-style: none;
-}
-
-nav ul li a {
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    display: block;
-}
-
-nav ul li a.activeTab {
-    color: cornflowerblue;
-}
-
-nav ul li:hover {
-    background-color: #d3d3d3;
 }
 
 /*
@@ -235,3 +194,96 @@ Misc
     border-bottom: 1px dotted;
 }
 
+/*
+################
+Grid layout
+ */
+
+/*
+Mobile
+ */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "nav"
+            "section"
+            "footer";
+
+}
+
+header img {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+/*
+Smaller screen/ tablet
+ */
+@media screen and (min-width: 736px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 50% 20% 1fr;
+        grid-template-areas:
+                "logo nav nav ."
+                "header header header header"
+                ". section section ."
+                "footer footer footer footer";
+    }
+
+    header img {
+        display: block;
+    }
+}
+
+/*
+Desktop
+ */
+@media screen and (min-width: 960px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 50% 20% 1fr;
+        grid-template-areas:
+                "logo nav nav ."
+                "header header header header"
+                ". section aside ."
+                "footer footer footer footer";
+    }
+
+    header img {
+        display: block;
+    }
+
+    aside {
+        display: block;
+    }
+
+    /*
+    Navigation bar
+     */
+    .dropdown-button {
+        display: none;
+    }
+    
+    .dropdown {
+        float: left;
+    }
+
+    nav a {
+        float: left;
+        min-width: inherit;
+    }
+
+    nav a .activeTab {
+        color: cornflowerblue;
+    }
+
+    .dropdown-content {
+        display: block;
+        position: inherit;
+        min-width: inherit;
+    }
+}
