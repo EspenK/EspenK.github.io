@@ -41,15 +41,13 @@ footer {
 /*
 Navigation bar
  */
-/*
-nav {
-    height: 52px;
-}
-*/
 
 nav img.logo {
-    max-height: 32px;
-    padding: 3px;
+    max-height: 30px;
+    padding: 5px;
+}
+nav {
+    height: 40px;
 }
 
 .dropdown-button {
