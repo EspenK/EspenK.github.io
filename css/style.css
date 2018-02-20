@@ -93,6 +93,10 @@ nav {
     background-color: cornflowerblue;
 }
 
+.dropdown .activeTab {
+    background-color: cornflowerblue;
+}
+
 /*
 Header
  */
